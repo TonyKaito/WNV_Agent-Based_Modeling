@@ -15,3 +15,12 @@ In an ever-changing world, where everything is in constant motion and there are 
 The specific methodology we will use to measure newly susceptible areas is to initialize a space of 9 different cities. Each of them will contain a variable amount of people living within it. Since we have noted that human-to-human interaction is not a factor, we do not care about specific habits of the movements of the people, and they will be wandering around the city borders aimlessly. As for the mosquitoes, we will assume that they start within a variable region of the plane, whether it be within the lower-left most city, or the right-half of the map. As for the birds, they will initially be starting out in random locations and will move around randomly. In this case, a bird within the model could represent a singular bird, or it could represent a flock of birds moving together. 
 We will then analyze how the infection spreads. We will start with the condition that a single mosquito has the virus. If a mosquito is within a certain radius of another agent, the mosquito will “feed” upon that agent. If a healthy mosquito “feeds” into a human (whether healthy or infected), nothing will occur; however, if a healthy mosquito “feeds” into an infectious bird, it will have a probability of becoming infectious itself. Likewise, if an infectious mosquito “feeds” into an agent, whether human or bird, the bird then has a likely chance of becoming infected (unless already infected). There will be no direct interactions between humans and the birds.
 The agent will continue to be in the infected state until after their period has passed, and then they enter the removed category. Once the agent has entered the recover category, they will gain life-long immunity and continue on with their life.
+
+## Citation
+
+[100] https://www.tandfonline.com/doi/pdf/10.1080/00063657109476300
+[101] https://keep.lib.asu.edu/_flysystem/fedora/2022-05/1-s2.0-s1001074208600194-main_0.pdf
+[102] http://www.lomborg-errors.dk/MalariaKenya.htm
+[103] https://www.caryinstitute.org/news-insights/podcast/poor-neighborhoods-and-mosquitoes
+[104] https://www.cdc.gov/westnile/transmission/index.html
+
