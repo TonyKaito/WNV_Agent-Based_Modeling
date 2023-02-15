@@ -1,7 +1,7 @@
 import mesa
 
 class SimpleCanvas(mesa.visualization.VisualizationElement):
-  local_includes = []
+  local_includes = ["simple_continuous_canvas.js"]
   portrayal_method = None
   canvas_height = 1000
   canvas_width = 1000
@@ -10,7 +10,10 @@ class SimpleCanvas(mesa.visualization.VisualizationElement):
     self.portrayal_method = portrayal_method
     self.canvas_height = canvas_height
     self.canvas_width = canvas_width
-
+    new_element = "new Simple_Continuous_Module({}, {})".format(
+      self.canvas_width, self.canvas_height
+    )
+    self.js_code = "elements.push(" + new_element + ");"
 
   def render(self, model):
     space_state = []
